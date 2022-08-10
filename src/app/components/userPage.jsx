@@ -6,7 +6,7 @@ import Quality from "./quality";
 import Loader from "./UI/Loader/Loader";
 
 const UserPage = ({ id }) => {
-    const [user, setUser] = useState(undefined);
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
         api.users.getById(id).then((data) => setUser(data));
